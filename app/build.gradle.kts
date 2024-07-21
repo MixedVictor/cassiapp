@@ -105,9 +105,9 @@ project.tasks.register("buildCassiaExt") {
         if (!project.file(cassiaExtHostPath).exists())
             throw RuntimeException("CassiaExt path does not exist: $cassiaExtHostPath")
 
-//        If you want to compile this manually, you'll need to compile cassiaext manually and grab the prefix.tar.gz.
+//        If you want to compile this manually, you'll need to compile cassiaext manually and grab the cassiaext.tar.gz.
 //        You can compile my version of cassiaext here: https://github.com/MixedVictor/cassiaext.
-//        You'll also need to change the cassiaext.cfg to point to the folder where prefix.tar.gz is.
+//        You'll also need to change the cassiaext.cfg to point to the folder where cassiaext.tar.gz is.
 //        val process3 = ProcessBuilder().command(*shellWrapper, "ninja -C $cassiaExtPath all").start()
 //        if (process3.waitFor() != 0)
 //            throw RuntimeException("Ninja failed to build CassiaExt: ${process3.exitValue()}\nSTDOUT:\n${process3.inputStream.reader().readText().trim()}\nSTDERR:\n${process3.errorStream.reader().readText().trim()}")
